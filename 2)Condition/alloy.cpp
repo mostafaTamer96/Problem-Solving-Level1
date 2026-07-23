@@ -1,0 +1,20 @@
+//https://vjudge.net/problem/AtCoder-abc212_a/origin
+#include <iostream>
+using namespace std;
+int main(){
+
+char x,y,z;
+cin>>x>>y>>z;
+    // RRR
+  if(x==y && y==z && x=='R')
+        cout<<3;
+   
+else if ((x==y || y==z) && y=='R')
+         cout<<2;
+
+else if (x=='R' || y=='R' || z=='R')
+        cout<<1;
+    
+else cout<<0;
+
+}
